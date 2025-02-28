@@ -11,17 +11,17 @@ var twoSum = (nums, target) => {
 
     for (let index = 0; index < nums.length; index++) {
         const difference = target - nums[index]
-      
+
         if (listPair.has(difference)) {
             return [listPair.get(difference), index]
         }
-        listPair.set(nums[index],index)
+        listPair.set(nums[index], index)
     }
-/* coucou */
+    /* coucou */
     return []
 }
 
-const nums = [3,3]
+const nums = [3, 3]
 const target = 6
 
 const result = twoSum(nums, target)
